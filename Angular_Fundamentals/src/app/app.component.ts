@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = "Angular FundaMentals";
-  inputVal = "Hello";
-  isDisabled = false;
+  imgSrc = "/assets/Angular.jpg";
 }
