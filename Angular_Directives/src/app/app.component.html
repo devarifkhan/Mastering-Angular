@@ -1,9 +1,6 @@
-<div class="container">
-  <label>Enter your age:</label>
-  <input type="text" (input)="checkEligibility()" [(ngModel)]="age" />
-
-  <div [ngSwitch]="isEligible">
-    <p *ngSwitchCase="true">You are eligible for vote.</p>
-    <p *ngSwitchDefault>You are not eligible for vote.</p>
-  </div>
-</div>
+<input
+  type="text"
+  placeholder="Enter text here..."
+  (input)="textInput($event)"
+  [ngClass]="{ 'txt': hasText }"
+/>

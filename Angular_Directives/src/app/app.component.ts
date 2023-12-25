@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_Directives';
-  age: number = 0;
-  isEligible: boolean = false;
-  checkEligibility() {
-    this.isEligible = this.age >= 18;
-}
+  hasText: boolean = false;
+  textInput(e:any) {
+    this.hasText = e.target.value !== '';
+  }
 }
