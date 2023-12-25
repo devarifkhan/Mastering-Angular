@@ -1,2 +1,7 @@
-<button (click)="displayELement = !displayELement">Show</button>
-<div *ngIf="displayELement">This is a division elements</div>
+<div *ngFor="let item of fullStackDev">
+  <ul>
+    <li>{{ item.id }}</li>
+    <li>{{ item.name }}</li>
+
+  </ul>
+</div>
