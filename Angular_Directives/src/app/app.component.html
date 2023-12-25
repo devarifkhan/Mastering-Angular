@@ -1,3 +1,2 @@
-<h1 *ngIf="num > 0">{{ num }} is greater than 0</h1>
-<h1 *ngIf="num == 0">{{ num }} is equal to 0</h1>
-<h1 *ngIf="num < 0">{{ num }} is less than 0</h1>
+<button (click)="displayELement = !displayELement">Show</button>
+<div *ngIf="displayELement">This is a division elements</div>

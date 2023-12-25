@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_Directives';
-  num = 5;
+  displayELement: boolean = true;
+
+
 }
