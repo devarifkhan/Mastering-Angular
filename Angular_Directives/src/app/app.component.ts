@@ -7,21 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_Directives';
-  fullStackDev = [{
-    id: 1,
-    name: 'Angular',
-  },
-    {
-      id: 2,
-      name:"JavaScript"
+  show: boolean= false;
+  listItems = [{
+    name: "Arif",
+    age:23
+  }, {
+    name: "Jack",
+    age:25
     }, {
-      id: 3,
-      name: "Python"
-    }, {
-      id: 4,
-      name:"Node.js"
-    }, {
-      id: 5,
-      name:"Mongo DB"
-  }];
+    name: "Bella",
+      age:24
+  }]
 }
