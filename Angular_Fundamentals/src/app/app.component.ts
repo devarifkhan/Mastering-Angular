@@ -7,10 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular FundaMentals';
-  isShift(event: any) {
-    if (event.shiftKey && event.key === 'Y') {
-    console.log('Shift + Y is pressed');
+  staticInput: string = "Static Two Way Data Binding";
+  dynamicInput: string = "";
 
-    }
-  }
 }
