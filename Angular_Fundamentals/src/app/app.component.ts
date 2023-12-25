@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = "Angular FundaMentals";
-  onKeyPress() {
-console.log('Keypress event is triggered')
+  onKeyDown() {
+console.log('KeyDown event is triggered')
 }
 }
