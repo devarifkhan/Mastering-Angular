@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_Directives';
-  person = {
-    age:20,
- }
+  age: number = 0;
+  isEligible: boolean = false;
+  checkEligibility() {
+    this.isEligible = this.age >= 18;
+}
 }

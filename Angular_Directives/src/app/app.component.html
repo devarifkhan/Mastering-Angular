@@ -1,7 +1,9 @@
-<div [ngSwitch]="person.age" style="text-align: center">
-  <p *ngSwitchCase="10">The person's age is 10 years old</p>
-  <p *ngSwitchCase="20">The person's age is 20 years old</p>
-  <p *ngSwitchCase="30">The person's age is 30 years old</p>
+<div class="container">
+  <label>Enter your age:</label>
+  <input type="text" (input)="checkEligibility()" [(ngModel)]="age" />
 
-  <p *ngSwitchDefault>The person's age is {{ person.age }} years old</p>
+  <div [ngSwitch]="isEligible">
+    <p *ngSwitchCase="true">You are eligible for vote.</p>
+    <p *ngSwitchDefault>You are not eligible for vote.</p>
+  </div>
 </div>
