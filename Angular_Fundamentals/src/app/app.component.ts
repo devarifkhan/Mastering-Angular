@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  a = 10;
-  b = 5;
-  ans = this.a + this.b;
+  title = "Angular FundaMentals";
+  inputVal = "Hello";
+  isDisabled = false;
 }
