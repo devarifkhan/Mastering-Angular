@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = "Angular FundaMentals";
-  imgSrc = "/assets/Angular.jpg";
-  display(msg:string) {
-    alert(msg)
+  counter = 0;
+  incr() {
+    this.counter ++;
   }
 }
