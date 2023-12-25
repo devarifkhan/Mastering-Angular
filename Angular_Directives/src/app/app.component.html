@@ -1,7 +1,18 @@
-<div *ngFor="let item of fullStackDev">
-  <ul>
-    <li>{{ item.id }}</li>
-    <li>{{ item.name }}</li>
+<button (click)="toggleMode()">{{ colorMode==='lightMode'?'Switch to Dark Mode':'Switch To Light Mode' }}</button>
+<div class="box" [ngClass]="colorMode">
+  <h1>Light Mode</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quidem porro
+    totam facere fugit, odit architecto beatae tempore sed, laudantium at. Quos
+    est error odio! Veritatis quibusdam excepturi maiores expedita!
+  </p>
+</div>
 
-  </ul>
+<div class="box" [ngClass]="colorMode">
+  <h1>Light Mode</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quidem porro
+    totam facere fugit, odit architecto beatae tempore sed, laudantium at. Quos
+    est error odio! Veritatis quibusdam excepturi maiores expedita!
+  </p>
 </div>

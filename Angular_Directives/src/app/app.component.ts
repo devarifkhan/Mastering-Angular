@@ -7,21 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_Directives';
-  fullStackDev = [{
-    id: 1,
-    name: 'Angular',
-  },
-    {
-      id: 2,
-      name:"JavaScript"
-    }, {
-      id: 3,
-      name: "Python"
-    }, {
-      id: 4,
-      name:"Node.js"
-    }, {
-      id: 5,
-      name:"Mongo DB"
-  }];
+  colorMode = 'lightMode';
+
+  toggleMode() {
+    if (this.colorMode === 'lightMode') {
+      this.colorMode = 'darkMode';
+    } else {
+      this.colorMode = 'lightMode';
+    }
+  }
 }
