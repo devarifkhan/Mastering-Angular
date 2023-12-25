@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular FundaMentals';
-  staticInput: string = "Static Two Way Data Binding";
-  dynamicInput: string = "";
+  inputVal: string = "";
+  dynamicVal: string = "";
+
+  show() {
+    this.dynamicVal = this.inputVal;
+  }
 
 }
