@@ -1,6 +1,18 @@
-<input
-  type="text"
-  placeholder="Enter text here..."
-  (input)="textInput($event)"
-  [ngClass]="{ 'txt': hasText }"
-/>
+<button (click)="toggleMode()">{{ colorMode==='lightMode'?'Switch to Dark Mode':'Switch To Light Mode' }}</button>
+<div class="box" [ngClass]="colorMode">
+  <h1>Light Mode</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quidem porro
+    totam facere fugit, odit architecto beatae tempore sed, laudantium at. Quos
+    est error odio! Veritatis quibusdam excepturi maiores expedita!
+  </p>
+</div>
+
+<div class="box" [ngClass]="colorMode">
+  <h1>Light Mode</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quidem porro
+    totam facere fugit, odit architecto beatae tempore sed, laudantium at. Quos
+    est error odio! Veritatis quibusdam excepturi maiores expedita!
+  </p>
+</div>

@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_Directives';
-  hasText: boolean = false;
-  textInput(e:any) {
-    this.hasText = e.target.value !== '';
+  colorMode = 'lightMode';
+
+  toggleMode() {
+    if (this.colorMode === 'lightMode') {
+      this.colorMode = 'darkMode';
+    } else {
+      this.colorMode = 'lightMode';
+    }
   }
 }
