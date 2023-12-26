@@ -6,16 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  subjectList = [
-    {
-      subCode: 101,
-      name: "JavaScript"
+  // listItems = [
+  //   'ItemA',
+  //   'ItemB',
+  //   'ItemC',
+  //   'ItemD'
+  // ]
+  listItems = [
 
-    },
-    {
-      subCode: 102,
-      name:"C++"
-    }
-]
-
+  ]
 }
