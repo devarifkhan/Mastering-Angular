@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_pipes';
-  showDt: Date = new Date();
+  employees = [{
+    name: 'John',
+    state: 'Dhaka',
+    salary:2000
+  }, {
+     name: 'King',
+    state: 'HongKong',
+    salary:20000
+  }];
 }

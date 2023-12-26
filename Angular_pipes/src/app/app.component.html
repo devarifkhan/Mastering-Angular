@@ -1,4 +1,14 @@
-<h1 style="text-align: center">{{ title | uppercase }}</h1>
-<h1 style="text-align: center">
-  {{ showDt | date : "dd MMM yyyy" | uppercase }}
-</h1>
+<div class="table-container">
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>State</th>
+      <th>Salary</th>
+    </tr>
+    <tr *ngFor="let emp of employees">
+      <td>{{ emp.name | titlecase }}</td>
+      <td>{{ emp.state | slice : 0 : 3 | uppercase }}</td>
+      <td>{{ emp.salary | currency : "USD" }}</td>
+    </tr>
+  </table>
+</div>
