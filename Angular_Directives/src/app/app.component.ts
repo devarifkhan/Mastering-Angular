@@ -7,13 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_Directives';
-  colorMode = 'lightMode';
+  colorVal = 'navy';
+  fontSize = '20px';
+  isItalic = 'italic';
 
-  toggleMode() {
-    if (this.colorMode === 'lightMode') {
-      this.colorMode = 'darkMode';
-    } else {
-      this.colorMode = 'lightMode';
-    }
-  }
 }
