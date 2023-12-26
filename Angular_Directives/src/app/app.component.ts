@@ -6,28 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  nm: string = "";
-  em: string = "";
-  emailIsValid: boolean = false;
-  formSubmitted: boolean = false;
+  subjectList = [
+    {
+      subCode: 101,
+      name: "JavaScript"
 
-
-  checkEmailValidation(em: string): void {
-    if (em.includes('@') && em.includes('.com')) {
-      this.emailIsValid = true;
-
-    } else {
-      this.emailIsValid = false;
+    },
+    {
+      subCode: 102,
+      name:"C++"
     }
-
-  }
-
-  showMessage() {
-    if (this.nm && this.emailIsValid) {
-      this.formSubmitted = true;
-    } else {
-      this.formSubmitted = false;
-    }
-  }
+]
 
 }
