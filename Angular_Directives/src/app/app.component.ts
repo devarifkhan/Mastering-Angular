@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  user: string = '';
+  a = 10;
+  b = 20;
+  calc() {
+    return this.a + this.b;
+  }
 }
