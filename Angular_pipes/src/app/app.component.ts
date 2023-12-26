@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular_pipes';
-  sliceArr = ['ItemA', 'ItemB', 'ItemC', 'ItemD'];
+  userDetails = {
+    name: "Arif",
+    email: "arif@gmail.com",
+    address: {
+      street: '23 steet st',
+      city: 'las vegas',
+      state: ' nevada',
+      zip:88901
+    }
+  }
 
 }
